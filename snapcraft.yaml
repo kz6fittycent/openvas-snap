@@ -1,0 +1,27 @@
+name: openvas
+version: 'git'
+summary: This is the Open Vulnerability Assessment Scanner (OpenVAS)
+description: |
+  This is the Open Vulnerability Assessment Scanner (OpenVAS) of the Greenbone Vulnerability Management (GVM) Solution.
+
+  It is used for the Greenbone Security Manager appliances and is a full-featured scan engine that executes a continuously 
+  updated and extended feed of Network Vulnerability Tests (NVTs).
+
+license: GPL-2.0
+base: core18
+grade: stable
+confinement: strict
+
+apps: 
+  openvas:
+    command: openvas
+    plugs:
+      - network
+      - network-bind
+      - network-control
+
+parts:
+  openvas:
+    source: https://github.com/greenbone/openvas
+    source-type: git
+    plugin: cmake

@@ -28,3 +28,18 @@ parts:
 
     build-packages:
       - clang-format-9
+      - gcc 
+      - pkg-config 
+      - libssh-gcrypt-dev 
+      - libgnutls28-dev
+      - libglib2.0-dev 
+      - libpcap-dev 
+      - libgpgme-dev 
+      - bison 
+      - libksba-dev 
+      - libsnmp-dev
+      - libgcrypt20-dev 
+      - redis-server
+
+    stage-packages:
+      - redis-server

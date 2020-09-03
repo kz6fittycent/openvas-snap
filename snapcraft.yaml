@@ -25,3 +25,6 @@ parts:
     source: https://github.com/greenbone/openvas
     source-type: git
     plugin: cmake
+
+    build-packages:
+      - clang-format-9

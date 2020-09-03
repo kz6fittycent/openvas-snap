@@ -25,6 +25,8 @@ parts:
     source: https://github.com/greenbone/openvas
     source-type: git
     plugin: cmake
+    override-build: |
+      snapcraftctl add-apt-repository universe
 
     build-packages:
       - clang-format-9
